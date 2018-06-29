@@ -11,7 +11,7 @@
 //
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
-import "phoenix_html"
+import 'phoenix_html';
 
 // Import local files
 //
@@ -19,3 +19,10 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+let Elm = require('../elm/Todo.elm');
+let storedState = localStorage.getItem('elm-todo-save');
+let startingState = storedState ? JSON.parse(storedState) : null;
+let todomvc = Elm.Todo.fullscreen(startingState);
+todomvc.ports.setStorage.subscribe(state => {
+  localStorage.setItem('elm-todo-save', JSON.stringify(state));
+});
