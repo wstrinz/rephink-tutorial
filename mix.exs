@@ -20,7 +20,7 @@ defmodule Rephink.Mixfile do
   def application do
     [
       mod: {Rephink.Application, []},
-      extra_applications: [:logger, :runtime_tools, :rethinkdb]
+      extra_applications: [:logger, :runtime_tools, :rethinkdb, :rethinkdb_changefeed]
     ]
   end
 
@@ -40,6 +40,7 @@ defmodule Rephink.Mixfile do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
+      {:rethinkdb_changefeed, "~> 0.0.1"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:rethinkdb_ecto, "~> 0.7"}

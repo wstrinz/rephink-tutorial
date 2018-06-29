@@ -19,5 +19,6 @@
   "postgrex": {:hex, :postgrex, "0.13.5", "3d931aba29363e1443da167a4b12f06dcd171103c424de15e5f3fc2ba3e6d9c5", [:mix], [{:connection, "~> 1.0", [hex: :connection, repo: "hexpm", optional: false]}, {:db_connection, "~> 1.1", [hex: :db_connection, repo: "hexpm", optional: false]}, {:decimal, "~> 1.0", [hex: :decimal, repo: "hexpm", optional: false]}], "hexpm"},
   "ranch": {:hex, :ranch, "1.3.2", "e4965a144dc9fbe70e5c077c65e73c57165416a901bd02ea899cfd95aa890986", [:rebar3], [], "hexpm"},
   "rethinkdb": {:hex, :rethinkdb, "0.4.0", "287714c2c7683a1f327ea83bf7a1c4eaaf8141ddf52e785632ef289d3851bc4e", [:mix], [{:connection, "~> 1.0.1", [hex: :connection, repo: "hexpm", optional: false]}, {:poison, "~> 1.5 or ~> 2.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
+  "rethinkdb_changefeed": {:hex, :rethinkdb_changefeed, "0.0.1", "b9db545259c1f4a2bc615c4eb1fe56eedbcf71d6ba4bec0be0ecb286967f191d", [:mix], [{:connection, "~> 1.0.1", [hex: :connection, repo: "hexpm", optional: false]}, {:rethinkdb, "~> 0.4.0", [hex: :rethinkdb, repo: "hexpm", optional: false]}], "hexpm"},
   "rethinkdb_ecto": {:hex, :rethinkdb_ecto, "0.7.0", "abf1671cc063dccea6832b94cb0de98b7720060e4c2fdc40ee3d755392a92426", [:mix], [{:ecto, "~> 2.1", [hex: :ecto, repo: "hexpm", optional: false]}, {:rethinkdb, "~> 0.4", [hex: :rethinkdb, repo: "hexpm", optional: false]}], "hexpm"},
 }
